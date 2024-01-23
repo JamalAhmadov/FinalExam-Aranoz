@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.panel-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: gray;
+    gap: 5px;
+    .action-area{
+        width: 80%;
+        height: 250px;
+        background-color: rgb(201, 201, 201);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+        .form-side{
+            width: 45%;
+        }
+        .line{
+            width: 3px;
+            height: 80%;
+            background-color: rgb(32, 66, 0);
+        }
+        .search-side{
+            width: 45%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            input{
+                width: 80%;
+                height: 40px;
+                padding: 3px 10px;
+                border-radius: 6px;
+                border: 1px solid black;
+            }
+            .sort-area{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                select{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .data-area{
+        width: 80%;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(201, 201, 201);
+        padding: 10px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        #data__container{
+            width: 100%;
+            
+        }
+        table, tr,td{
+            border: 2px solid rgb(53, 53, 53);
+        }
+        td{
+            padding: 10px;
+            button{
+                border: 0;
+                background-color: rgb(32, 66, 0);
+                color: white;
+                width: 100%;
+                padding: 7px;
+            }
+            img{
+                max-width: 50px;
+                width: 100%;
+            }
+        }
+    }
+}

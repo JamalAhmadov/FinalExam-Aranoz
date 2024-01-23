@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.panel-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: gray;
+  gap: 5px;
+}
+.panel-box .action-area {
+  width: 80%;
+  height: 250px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.panel-box .action-area .form-side {
+  width: 45%;
+}
+.panel-box .action-area .line {
+  width: 3px;
+  height: 80%;
+  background-color: rgb(32, 66, 0);
+}
+.panel-box .action-area .search-side {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.panel-box .action-area .search-side input {
+  width: 80%;
+  height: 40px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.panel-box .action-area .search-side .sort-area {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-box .action-area .search-side .sort-area select {
+  width: 50%;
+}
+.panel-box .data-area {
+  width: 80%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(201, 201, 201);
+  padding: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.panel-box .data-area #data__container {
+  width: 100%;
+}
+.panel-box .data-area table, .panel-box .data-area tr, .panel-box .data-area td {
+  border: 2px solid rgb(53, 53, 53);
+}
+.panel-box .data-area td {
+  padding: 10px;
+}
+.panel-box .data-area td button {
+  border: 0;
+  background-color: rgb(32, 66, 0);
+  color: white;
+  width: 100%;
+  padding: 7px;
+}
+.panel-box .data-area td img {
+  max-width: 50px;
+  width: 100%;
+}
